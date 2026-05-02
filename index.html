@@ -10,54 +10,64 @@
       box-sizing: border-box;
     }
 
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #000;
-    color: #fff;
-    position: relative;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      position: relative;
+      overflow-x: hidden;
     }
 
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 48%;
-    height: 100%;
-    pointer-events: none;
-    background:
-      radial-gradient(circle at 70% 25%, rgba(116, 199, 255, 0.16), transparent 32%),
-      radial-gradient(circle at 90% 55%, rgba(255, 107, 107, 0.13), transparent 34%),
-      linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-    background-size:
-      auto,
-      auto,
-      58px 58px,
-      58px 58px;
-    opacity: 0.75;
-    z-index: 0;
+    body::before {
+      content: "";
+      position: fixed;
+      top: -12%;
+      right: -8%;
+      width: 58%;
+      height: 125%;
+      pointer-events: none;
+      background: url("images/bg-tech.jpg") right center / cover no-repeat;
+      opacity: 0.52;
+      z-index: 0;
+      transform: rotate(-8deg);
+      animation: techMove 12s ease-in-out infinite;
     }
 
-  body::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 55%;
-    height: 100%;
-    pointer-events: none;
-    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.15) 45%, rgba(0, 0, 0, 0) 100%);
-    z-index: 0;
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(
+          90deg,
+          #000 0%,
+          #000 48%,
+          rgba(0, 0, 0, 0.72) 64%,
+          rgba(0, 0, 0, 0.35) 82%,
+          rgba(0, 0, 0, 0.12) 100%
+        );
+      z-index: 0;
     }
 
-  .page {
-    position: relative;
-    z-index: 1;
+    @keyframes techMove {
+      0% {
+        transform: translateY(0) rotate(-8deg) scale(1);
+      }
+
+      50% {
+        transform: translateY(-18px) rotate(-8deg) scale(1.03);
+      }
+
+      100% {
+        transform: translateY(0) rotate(-8deg) scale(1);
+      }
     }
-    
+
     .page {
+      position: relative;
+      z-index: 1;
       width: 100%;
       min-height: 100vh;
       padding: 70px 8%;
@@ -141,27 +151,26 @@
       content: "";
       position: absolute;
       inset: 0;
-      background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.35));
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.35));
       opacity: 1;
       transition: opacity 0.25s ease;
     }
-    
+
     .data-tile {
       background-image:
-        linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.84)),
+        linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.74)),
         url("images/data.png");
     }
 
     .fullstack-tile {
       background-image:
-        linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.84)),
+        linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.74)),
         url("images/fullstack.png");
     }
 
     .gaming-tile {
       background-image:
-        linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.84)),
+        linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.72)),
         url("images/gaming.png");
     }
 
@@ -205,6 +214,16 @@
     }
 
     @media (max-width: 800px) {
+      body::before {
+        width: 100%;
+        right: -45%;
+        opacity: 0.25;
+      }
+
+      body::after {
+        background: rgba(0, 0, 0, 0.72);
+      }
+
       .page {
         padding: 45px 6%;
       }
