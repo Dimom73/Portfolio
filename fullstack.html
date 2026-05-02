@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FullStack Projects | Dmitri Shchukin</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    .header {
+      background: #fff;
+      color: #000;
+      padding: 60px 12%;
+    }
+
+    .header h1 {
+      margin: 0 0 10px 0;
+      font-size: 32px;
+      font-weight: 500;
+    }
+
+    .header p {
+      margin: 6px 0;
+      font-size: 20px;
+    }
+
+    .content {
+      padding: 80px 7%;
+    }
+
+    .back {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .section-title {
+      margin-top: 50px;
+      font-size: 30px;
+      font-weight: 500;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 2px;
+      background: linear-gradient(90deg, #74c7ff, #ff6b6b);
+      left: 0;
+      bottom: -12px;
+    }
+
+    .projects-grid {
+      margin-top: 70px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+    }
+
+    .project-card {
+      border: 2px solid #fff;
+      min-height: 180px;
+      padding: 30px;
+    }
+
+    .project-card h2 {
+      margin-top: 0;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .project-card p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #ddd;
+    }
+
+    @media (max-width: 800px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>FullStack Projects</h1>
+    <p>Frontend | Backend | Web Applications</p>
+  </div>
+
+  <div class="content">
+    <a class="back" href="index.html">← Back to Portfolio</a>
+
+    <h2 class="section-title">Coming Soon</h2>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <h2>Frontend Projects</h2>
+        <p>Future projects focused on user interfaces, responsive layouts, and interactive web pages will be added here.</p>
+      </div>
+
+      <div class="project-card">
+        <h2>Backend Projects</h2>
+        <p>Future projects focused on server logic, APIs, databases, and application structure will be added here.</p>
+      </div>
+
+      <div class="project-card">
+        <h2>Full Web Applications</h2>
+        <p>Future complete web applications combining frontend, backend, and database logic will be added here.</p>
+      </div>
+
+      <div class="project-card">
+        <h2>Automation Tools</h2>
+        <p>Future tools and scripts for automation, data processing, and workflow improvement will be added here.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
