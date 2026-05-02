@@ -51,15 +51,27 @@
 
     .contacts {
       display: flex;
-      gap: 22px;
+      gap: 18px;
       flex-wrap: wrap;
-      font-size: 16px;
+      align-items: center;
     }
 
     .contacts a {
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(255, 255, 255, 0.75);
       color: #fff;
       text-decoration: none;
-      border-bottom: 1px solid #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .contacts a:hover {
+      background: linear-gradient(135deg, rgba(116, 199, 255, 0.18), rgba(255, 107, 107, 0.14));
+      border-color: #fff;
+      transform: translateY(-3px);
     }
 
     .tiles {
