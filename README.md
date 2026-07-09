@@ -39,15 +39,6 @@ The portfolio structure and visual design are completed.
 
 Current project cards are placeholders and will be replaced with real case studies, dashboards, SQL projects, Python notebooks, and business analysis projects.
 
-## Planned Improvements
-
-- Add real Data Analyst projects
-- Add project screenshots and dashboard previews
-- Add GitHub links for each project
-- Add live dashboard links where available
-- Improve project case study pages
-- Add alt text for all project images
-
 ## Contact
 
 Email:  
