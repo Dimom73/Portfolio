@@ -145,13 +145,14 @@ img {
   background:
     linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0.98) 0%,
-      rgba(0, 0, 0, 0.96) 36%,
-      rgba(0, 0, 0, 0.76) 58%,
+      rgba(0, 0, 0, 0.99) 0%,
+      rgba(0, 0, 0, 0.99) 42%,
+      rgba(0, 0, 0, 0.94) 54%,
+      rgba(0, 0, 0, 0.70) 70%,
       rgba(0, 0, 0, 0.38) 100%
     ),
-    radial-gradient(circle at 80% 32%, rgba(103, 199, 255, 0.10), transparent 24%),
-    radial-gradient(circle at 74% 70%, rgba(255, 77, 95, 0.08), transparent 28%),
+    radial-gradient(circle at 84% 32%, rgba(103, 199, 255, 0.10), transparent 24%),
+    radial-gradient(circle at 80% 70%, rgba(255, 77, 95, 0.08), transparent 28%),
     #020306;
 }
 
@@ -159,12 +160,12 @@ img {
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
-  width: 58%;
+  right: 3%;
+  width: 43%;
   height: 100%;
   pointer-events: none;
   background: url("../images/hero-network.svg") right center / contain no-repeat;
-  opacity: 0.92;
+  opacity: 0.94;
   animation: heroNetworkFloat 11s ease-in-out infinite;
 }
 
@@ -174,9 +175,13 @@ img {
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.04) 0%, transparent 55%),
-    radial-gradient(circle at 80% 46%, rgba(103, 199, 255, 0.06), transparent 22%),
-    radial-gradient(circle at 78% 72%, rgba(255, 77, 95, 0.05), transparent 24%);
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.12) 0%,
+      rgba(0, 0, 0, 0.10) 48%,
+      rgba(0, 0, 0, 0.02) 72%,
+      transparent 100%
+    );
 }
 
 @keyframes heroNetworkFloat {
@@ -185,7 +190,7 @@ img {
   }
 
   50% {
-    transform: translate3d(-10px, -5px, 0) scale(1.015);
+    transform: translate3d(-8px, -4px, 0) scale(1.015);
   }
 
   100% {
@@ -196,7 +201,7 @@ img {
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 700px;
+  max-width: 620px;
 }
 
 .hero h1 {
@@ -225,7 +230,7 @@ img {
   color: var(--muted);
   font-size: 17px;
   line-height: 1.7;
-  max-width: 620px;
+  max-width: 560px;
 }
 
 .hero-actions {
@@ -514,8 +519,9 @@ img {
   }
 
   .hero::before {
-    width: 65%;
-    opacity: 0.72;
+    right: 2%;
+    width: 48%;
+    opacity: 0.68;
   }
 }
 
@@ -545,8 +551,9 @@ img {
   }
 
   .hero::before {
-    width: 76%;
-    opacity: 0.48;
+    right: -8%;
+    width: 58%;
+    opacity: 0.34;
   }
 }
 
@@ -577,8 +584,9 @@ img {
   }
 
   .hero::before {
+    right: -30%;
     width: 100%;
-    opacity: 0.28;
+    opacity: 0.18;
     background-position: center right;
   }
 
