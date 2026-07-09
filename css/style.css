@@ -478,12 +478,22 @@ img {
   background: transparent;
   color: var(--muted);
   font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  color: #ffffff;
+  border-color: rgba(103, 199, 255, 0.42);
+  background: rgba(255, 255, 255, 0.055);
 }
 
 .filter-btn.active {
-  color: white;
-  border-color: rgba(103, 199, 255, 0.34);
-  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  border-color: transparent;
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-red));
+  box-shadow: 0 8px 22px rgba(255, 77, 95, 0.16);
 }
 
 .project-layout {
