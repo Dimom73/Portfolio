@@ -599,3 +599,55 @@ img {
     gap: 8px;
   }
 }
+/* ===== Replace square grid with animated tech network background ===== */
+
+body::before {
+  display: none;
+}
+
+.hero {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.78) 42%, rgba(0, 0, 0, 0.38) 100%),
+    radial-gradient(circle at 82% 30%, rgba(103, 199, 255, 0.12), transparent 24%),
+    radial-gradient(circle at 78% 70%, rgba(255, 77, 95, 0.10), transparent 28%),
+    #020306;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.58;
+  background-image: url("data:image/svg+xml,%3Csvg width='1400' height='420' viewBox='0 0 1400 420' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.65'%3E%3Cline x1='40' y1='210' x2='180' y2='165' stroke='%2367c7ff' stroke-opacity='0.18' stroke-width='1.2'/%3E%3Cline x1='180' y1='165' x2='315' y2='235' stroke='%23ffffff' stroke-opacity='0.12' stroke-width='1.2'/%3E%3Cline x1='315' y1='235' x2='470' y2='150' stroke='%23ff4d5f' stroke-opacity='0.16' stroke-width='1.2'/%3E%3Cline x1='470' y1='150' x2='640' y2='205' stroke='%2367c7ff' stroke-opacity='0.16' stroke-width='1.2'/%3E%3Cline x1='640' y1='205' x2='810' y2='118' stroke='%23ffffff' stroke-opacity='0.13' stroke-width='1.2'/%3E%3Cline x1='810' y1='118' x2='970' y2='190' stroke='%2367c7ff' stroke-opacity='0.18' stroke-width='1.2'/%3E%3Cline x1='970' y1='190' x2='1135' y2='145' stroke='%23ff4d5f' stroke-opacity='0.15' stroke-width='1.2'/%3E%3Cline x1='1135' y1='145' x2='1310' y2='215' stroke='%2367c7ff' stroke-opacity='0.16' stroke-width='1.2'/%3E%3Cline x1='180' y1='165' x2='470' y2='150' stroke='%23ffffff' stroke-opacity='0.08' stroke-width='1'/%3E%3Cline x1='315' y1='235' x2='640' y2='205' stroke='%23ffffff' stroke-opacity='0.08' stroke-width='1'/%3E%3Cline x1='470' y1='150' x2='810' y2='118' stroke='%23ffffff' stroke-opacity='0.07' stroke-width='1'/%3E%3Cline x1='640' y1='205' x2='970' y2='190' stroke='%23ffffff' stroke-opacity='0.08' stroke-width='1'/%3E%3Cline x1='810' y1='118' x2='1135' y2='145' stroke='%23ffffff' stroke-opacity='0.07' stroke-width='1'/%3E%3Cline x1='970' y1='190' x2='1310' y2='215' stroke='%23ffffff' stroke-opacity='0.08' stroke-width='1'/%3E%3Ccircle cx='40' cy='210' r='5' fill='%2367c7ff' fill-opacity='0.55'/%3E%3Ccircle cx='180' cy='165' r='6' fill='%23ff4d5f' fill-opacity='0.55'/%3E%3Ccircle cx='315' cy='235' r='5' fill='%23ffffff' fill-opacity='0.34'/%3E%3Ccircle cx='470' cy='150' r='7' fill='%2367c7ff' fill-opacity='0.50'/%3E%3Ccircle cx='640' cy='205' r='5' fill='%23ffffff' fill-opacity='0.30'/%3E%3Ccircle cx='810' cy='118' r='7' fill='%23ff4d5f' fill-opacity='0.45'/%3E%3Ccircle cx='970' cy='190' r='6' fill='%2367c7ff' fill-opacity='0.45'/%3E%3Ccircle cx='1135' cy='145' r='5' fill='%23ffffff' fill-opacity='0.32'/%3E%3Ccircle cx='1310' cy='215' r='7' fill='%23ff4d5f' fill-opacity='0.45'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 1200px 420px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  filter: blur(0.2px);
+  animation: networkFloat 11s ease-in-out infinite;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 82% 38%, rgba(103, 199, 255, 0.16), transparent 20%),
+    radial-gradient(circle at 74% 68%, rgba(255, 77, 95, 0.12), transparent 24%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.08), transparent 58%);
+}
+
+@keyframes networkFloat {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(-18px, -8px, 0) scale(1.015);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
