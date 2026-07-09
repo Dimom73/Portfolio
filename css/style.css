@@ -342,6 +342,20 @@ img {
   background-size: auto, 28px 28px, 28px 28px, auto;
 }
 
+.card-thumb-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background: #ffffff;
+}
+
+.card-thumb-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .card-body {
   padding: 16px;
 }
@@ -382,6 +396,19 @@ img {
   color: #dfeeff;
   font-size: 12px;
   font-weight: 600;
+}
+
+.tag-primary {
+  background: linear-gradient(135deg, rgba(103, 199, 255, 0.95), rgba(255, 77, 95, 0.95));
+  border-color: transparent;
+  color: #ffffff;
+  box-shadow: 0 8px 22px rgba(255, 77, 95, 0.16);
+}
+
+.tag-secondary {
+  background: rgba(255, 255, 255, 0.045);
+  border-color: rgba(103, 199, 255, 0.34);
+  color: #dfeeff;
 }
 
 /* Additional projects */
