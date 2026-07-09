@@ -1,36 +1,60 @@
 # Dmitri Shchukin — Portfolio
 
-Personal portfolio website focused on Data Analysis, SQL, Python, Power BI, Excel, and practical business-oriented projects.
+Personal portfolio website focused on Data Analysis, SQL, Python, Power BI, Excel, and business-oriented projects.
 
 Live website:  
 https://dimom73.github.io/Portfolio/
 
 ## About
 
-This portfolio is designed to present my work as a Junior Data Analyst.
+This portfolio presents my work as a Junior Data Analyst.
 
-The main focus is on data projects that demonstrate practical analytical thinking, including:
+The main focus is on practical data projects, including:
 
 - SQL analysis
 - Python data analysis
 - Power BI dashboards
-- Excel-based reporting
+- Excel reporting
 - Business-oriented insights
 - End-to-end analytical projects
 
 The website also includes additional sections for web tools, automation, and creative technical projects.
 
-## Website Structure
+## Main Sections
 
-```text
-Portfolio/
-├── index.html
-├── data-analyst.html
-├── fullstack.html
-├── gaming.html
-├── project-template.html
-├── css/
-│   └── style.css
-├── images/
-│   └── bg-tech.png
-└── README.md
+- **Data Analyst Projects** — SQL, Python, Power BI, Excel, dashboards, and business analysis projects.
+- **Web & Automation Projects** — small web tools, automation scripts, and practical applications.
+- **Creative / Game Development** — creative coding, interactive systems, and game development experiments.
+
+## Tech Stack
+
+- HTML
+- CSS
+- JavaScript
+- GitHub Pages
+
+## Current Status
+
+The portfolio structure and visual design are completed.
+
+Current project cards are placeholders and will be replaced with real case studies, dashboards, SQL projects, Python notebooks, and business analysis projects.
+
+## Planned Improvements
+
+- Add real Data Analyst projects
+- Add project screenshots and dashboard previews
+- Add GitHub links for each project
+- Add live dashboard links where available
+- Improve project case study pages
+- Add alt text for all project images
+
+## Contact
+
+Email:  
+dimashukin7@gmail.com
+
+LinkedIn:  
+https://www.linkedin.com/in/dmitrishchukin/
+
+GitHub:  
+https://github.com/Dimom73
