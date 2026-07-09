@@ -356,6 +356,17 @@ img {
   object-fit: contain;
 }
 
+.card-thumb-cover {
+  background: #020306;
+  overflow: hidden;
+}
+
+.card-thumb-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .card-body {
   padding: 16px;
 }
