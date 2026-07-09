@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Sales Database Design | Dmitri Shchukin</title>
+  <link rel="stylesheet" href="css/style.css?v=12" />
+</head>
+<body>
+
+  <div class="page-shell">
+
+    <header class="topbar panel">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="data-analyst.html">Data Analyst</a>
+        <a href="fullstack.html">Web & Automation</a>
+        <a href="gaming.html">Gaming</a>
+      </nav>
+
+      <div class="nav-icons">
+        <a href="mailto:dimashukin7@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16v12H4z"></path>
+            <path d="M4 7l8 6 8-6"></path>
+          </svg>
+        </a>
+
+        <a href="https://www.linkedin.com/in/dmitrishchukin/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <path d="M6.94 8.5H3.56V20h3.38V8.5zM5.25 3A2 2 0 1 0 5.25 7a2 2 0 0 0 0-4zM20.44 12.58c0-3.01-1.61-4.41-3.76-4.41-1.73 0-2.5.95-2.93 1.62V8.5h-3.38V20h3.38v-6.41c0-.34.02-.67.13-.91.27-.67.88-1.37 1.91-1.37 1.35 0 1.89 1.03 1.89 2.54V20H21v-7.42z"/>
+          </svg>
+        </a>
+
+        <a href="https://github.com/Dimom73/Portfolio" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <path d="M12 .5A12 12 0 0 0 8.2 23.9c.6.1.8-.3.8-.6v-2.2c-3.34.73-4.04-1.42-4.04-1.42-.55-1.38-1.34-1.74-1.34-1.74-1.1-.75.08-.74.08-.74 1.21.09 1.84 1.23 1.84 1.23 1.08 1.82 2.82 1.3 3.5.99.11-.77.42-1.29.77-1.59-2.67-.3-5.47-1.32-5.47-5.86 0-1.29.47-2.35 1.23-3.18-.12-.3-.53-1.51.12-3.15 0 0 1-.32 3.3 1.21a11.7 11.7 0 0 1 6 0c2.3-1.53 3.3-1.21 3.3-1.21.65 1.64.24 2.85.12 3.15.76.83 1.23 1.89 1.23 3.18 0 4.55-2.8 5.55-5.48 5.85.43.37.81 1.1.81 2.22v3.29c0 .33.21.72.82.6A12 12 0 0 0 12 .5z"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="project-layout">
+
+        <div class="project-content panel">
+          <a class="back-link" href="data-analyst.html">← Back to all projects</a>
+
+          <h1>Car Sales Database Design</h1>
+          <p class="project-subtitle">SQL Server relational database design project</p>
+
+          <div class="tag-row">
+            <span class="tag">SQL Server</span>
+            <span class="tag">Database Design</span>
+            <span class="tag">ERD</span>
+            <span class="tag">Data Modeling</span>
+          </div>
+
+          <h3>Project Overview</h3>
+          <p>
+            This project focuses on transforming a flat car sales dataset into a structured
+            relational database. The original dataset included vehicle sale transactions,
+            customer information, dealer details, car specifications, regions and sale prices.
+          </p>
+
+          <p>
+            The goal was to design a normalized SQL Server database, define primary and
+            foreign keys, separate repeated entities into dedicated tables, and create a
+            database structure suitable for future analysis in SQL, Python and Power BI.
+          </p>
+
+          <h3>Dataset</h3>
+          <p>
+            The original dataset included 16 columns and 23,906 rows. For the public GitHub
+            version, a 200-row sample dataset is included. Customer names and phone numbers
+            were anonymized before publishing.
+          </p>
+
+          <h3>Database Structure</h3>
+          <p>
+            The database was designed around the main business entities involved in a car
+            sale process. The final structure includes separate tables for customers,
+            regions, dealers, companies, models, body styles, cars and sales.
+          </p>
+
+          <ul>
+            <li><strong>Customers</strong> — stores customer name, gender and annual income.</li>
+            <li><strong>Regions</strong> — stores dealer regions.</li>
+            <li><strong>Dealers</strong> — stores dealer names and dealer numbers.</li>
+            <li><strong>Companies</strong> — stores car manufacturers and brands.</li>
+            <li><strong>Models</strong> — stores car model names.</li>
+            <li><strong>Body Styles</strong> — stores body style categories.</li>
+            <li><strong>Cars</strong> — stores car specifications and references to company, model and body style.</li>
+            <li><strong>Sales</strong> — stores sale transactions connecting customers, dealers, regions and cars.</li>
+          </ul>
+
+          <h3>Tools & Technologies</h3>
+          <ul>
+            <li>Microsoft SQL Server</li>
+            <li>SQL</li>
+            <li>Relational database design</li>
+            <li>Primary keys and foreign keys</li>
+            <li>Entity relationship diagram</li>
+            <li>CSV dataset preparation</li>
+          </ul>
+
+          <h3>Key Features</h3>
+          <ul>
+            <li>Created a SQL Server database from a flat car sales dataset.</li>
+            <li>Separated repeated entities into normalized relational tables.</li>
+            <li>Defined primary keys and foreign key relationships.</li>
+            <li>Loaded lookup tables using distinct values from the staging dataset.</li>
+            <li>Connected sale transactions to customers, dealers, regions and cars.</li>
+            <li>Created an ERD to visualize the database structure.</li>
+            <li>Prepared a public anonymized dataset sample for GitHub.</li>
+          </ul>
+
+          <h3>Business Value</h3>
+          <p>
+            This database structure makes the sales data easier to manage, query and analyze.
+            Instead of working with one large flat table, the data is organized into meaningful
+            entities that can support future reporting, dashboards and business analysis.
+          </p>
+
+          <h3>What I Learned</h3>
+          <p>
+            Through this project, I practiced database planning, table design, data modeling,
+            SQL Server syntax, primary and foreign key relationships, normalizing a flat dataset,
+            and preparing a project for future analytical work.
+          </p>
+        </div>
+
+        <aside class="project-preview panel">
+          <div class="project-preview-box">
+            <img
+              src="https://raw.githubusercontent.com/Dimom73/Car-Sales-Database-Design/main/database_diagram.png"
+              alt="Entity relationship diagram for the Car Sales Database Design project"
+              style="width: 100%; height: 100%; object-fit: contain; padding: 18px; background: #ffffff;"
+            />
+          </div>
+
+          <div class="project-actions">
+            <a class="btn btn-primary" href="https://github.com/Dimom73/Car-Sales-Database-Design" target="_blank" rel="noopener noreferrer">View GitHub Repo</a>
+            <a class="btn btn-secondary" href="https://github.com/Dimom73/Car-Sales-Database-Design/blob/main/sql/car_sales_database.sql" target="_blank" rel="noopener noreferrer">View SQL File</a>
+          </div>
+        </aside>
+
+      </section>
+
+    </main>
+
+    <footer class="footer panel">
+      <span>© 2026 Dmitri Shchukin</span>
+      <span class="footer-note">Car Sales Database Design</span>
+    </footer>
+
+  </div>
+
+</body>
+</html>
